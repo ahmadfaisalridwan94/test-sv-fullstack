@@ -1,0 +1,680 @@
+{
+	"info": {
+		"_postman_id": "a29a6a60-8f52-42e2-8b78-f3798e151c60",
+		"name": "SharingVisionTestFaisal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9172327"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Home",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:5173, http://127.0.0.1:5173"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 13:59:59 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "134"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"00\",\n    \"responseStatus\": true,\n    \"responseMessage\": \"Test Backend Sharing Vision - Ahmad Faisal Ridwan\",\n    \"responseData\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/article/100/0?status=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"100",
+						"0"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Article",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/article/2/0",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								"2",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:5173, http://127.0.0.1:5173"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 14:00:53 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1259"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Id\": 1,\n        \"Title\": \"Minyak Ikan Kod dan Minyak Ikan Tuna, Mana yang Lebih Baik?\",\n        \"Content\": \"Nutrisi memiliki peran penting dalam mendukung proses tumbuh kembang si Kecil. Di antara berbagai asupan nutrisi yang penting untuk anak, Bunda jangan sampai melewatkan asupan minyak ikan, ya! Karena, manfaat minyak ikan untuk anak sangatlah banyak, terutama bagi proses perkembangan otak yang optimal.\",\n        \"Category\": \"Nutrisi dan Makanan\",\n        \"CreatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"UpdatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"Status\": \"published\"\n    },\n    {\n        \"Id\": 2,\n        \"Title\": \"Ketahui Apa Saja Hak dan Kewajiban Anak di Rumah\",\n        \"Content\": \"Setiap anak berhak mendapatkan pendidikan. Tidak cuma dalam bentuk pendidikan formal dengan cara menyekolahkan anak, tapi juga mendidik anak belajar di rumah. Misalnya, ketika si Kecil merasa kesulitan dengan tugas sekolahnya, Bunda harus membantu mengajari anak sampai ia mengerti. Tidak hanya pelajaran sekolah saja, Bunda juga bisa mengajarkan anak soal pelajaran hidup, seperti tentang moral, tata krama, dan etika berinteraksi dengan orang lain supaya si Kecil nantinya tumbuh menjadi pribadi yang lebih baik.\",\n        \"Category\": \"Nutrisi dan Makanan\",\n        \"CreatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"UpdatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"Status\": \"published\"\n    }\n]"
+				},
+				{
+					"name": "Articles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/article/100/0?status=draft",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								"100",
+								"0"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "draft"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 15:50:44 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "645"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Id\": 3,\n        \"Title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test Delete\",\n        \"Content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\n        \"Category\": \"Nutrisi\",\n        \"CreatedAt\": \"2023-06-06T22:49:16+07:00\",\n        \"UpdatedAt\": \"2023-06-06T22:49:16+07:00\",\n        \"Status\": \"draft\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Single Article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/article/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Single Article",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/article/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:5173, http://127.0.0.1:5173"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 14:00:45 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "528"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 1,\n    \"Title\": \"Minyak Ikan Kod dan Minyak Ikan Tuna, Mana yang Lebih Baik?\",\n    \"Content\": \"Nutrisi memiliki peran penting dalam mendukung proses tumbuh kembang si Kecil. Di antara berbagai asupan nutrisi yang penting untuk anak, Bunda jangan sampai melewatkan asupan minyak ikan, ya! Karena, manfaat minyak ikan untuk anak sangatlah banyak, terutama bagi proses perkembangan otak yang optimal.\",\n    \"Category\": \"Nutrisi dan Makanan\",\n    \"CreatedAt\": \"2023-06-06T20:59:46+07:00\",\n    \"UpdatedAt\": \"2023-06-06T20:59:46+07:00\",\n    \"Status\": \"published\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/article/2/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Article",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/article/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:5173, http://127.0.0.1:5173"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Entity",
+							"value": "3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 14:13:17 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "108"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"responseCode\": \"00\",\n    \"responseStatus\": true,\n    \"responseMessage\": \"Delete article success!\",\n    \"responseData\": null\n}"
+				},
+				{
+					"name": "Post Doesnt Exist",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/article/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								"3"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:5173, http://127.0.0.1:5173"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 14:13:53 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Post doesn't exist\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan\",\r\n    \"content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\r\n    \"category\": \"Nutrisi\",\r\n    \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/article/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"7 Cara Stimulasi untuk Anak Usia 1 Tahun\",\r\n    \"content\": \"Selamat, Bun sekarang si Kecil sudah sudah genap berusia 1 tahun! Dapat dibayangkan dari masih bayi yang tidak bisa melakukan apa pun, sekarang ia sudah tumbuh dan berkembang dengan cepat. Selain terlihat dari perubahan fisiknya, anak usia 1 tahun mulai menguasai kemampuan motorik baru yang membuatnya lebih mandiri. \",\r\n    \"category\": \"Stimulasi\",\r\n    \"status\": \"draft\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/article/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Lacation",
+							"value": "localhost:8080/article//3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 06:27:39 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "526"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 3,\n    \"Title\": \"7 Cara Stimulasi untuk Anak Usia 1 Tahun\",\n    \"Content\": \"Selamat, Bun sekarang si Kecil sudah sudah genap berusia 1 tahun! Dapat dibayangkan dari masih bayi yang tidak bisa melakukan apa pun, sekarang ia sudah tumbuh dan berkembang dengan cepat. Selain terlihat dari perubahan fisiknya, anak usia 1 tahun mulai menguasai kemampuan motorik baru yang membuatnya lebih mandiri.\",\n    \"Category\": \"Stimulasi\",\n    \"CreatedAt\": \"2023-06-06T13:27:39.7370317+07:00\",\n    \"UpdatedAt\": \"2023-06-06T13:27:39.7370317+07:00\",\n    \"Status\": \"draft\"\n}"
+				},
+				{
+					"name": "Error Title",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"content\": \"Selamat, Bun sekarang si Kecil sudah sudah genap berusia 1 tahun! Dapat dibayangkan dari masih bayi yang tidak bisa melakukan apa pun, sekarang ia sudah tumbuh dan berkembang dengan cepat. Selain terlihat dari perubahan fisiknya, anak usia 1 tahun mulai menguasai kemampuan motorik baru yang membuatnya lebih mandiri. \",\r\n    \"category\": \"Stimulasi\",\r\n    \"status\": \"draft\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/article/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								""
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 06:28:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Title must be at least 20 characters\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test Edit\",\r\n    \"content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\r\n    \"category\": \"Nutrisi\",\r\n    \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/article/16",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"16"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"7 Cara Stimulasi untuk Anak Usia 1 Tahun\",\r\n    \"content\": \"Selamat, Bun sekarang si Kecil sudah sudah genap berusia 1 tahun! Dapat dibayangkan dari masih bayi yang tidak bisa melakukan apa pun, sekarang ia sudah tumbuh dan berkembang dengan cepat. Selain terlihat dari perubahan fisiknya, anak usia 1 tahun mulai menguasai kemampuan motorik baru yang membuatnya lebih mandiri. \",\r\n    \"category\": \"Stimulasi\",\r\n    \"status\": \"draft\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/article/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Lacation",
+							"value": "localhost:8080/article//3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 06:27:39 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "526"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 3,\n    \"Title\": \"7 Cara Stimulasi untuk Anak Usia 1 Tahun\",\n    \"Content\": \"Selamat, Bun sekarang si Kecil sudah sudah genap berusia 1 tahun! Dapat dibayangkan dari masih bayi yang tidak bisa melakukan apa pun, sekarang ia sudah tumbuh dan berkembang dengan cepat. Selain terlihat dari perubahan fisiknya, anak usia 1 tahun mulai menguasai kemampuan motorik baru yang membuatnya lebih mandiri.\",\n    \"Category\": \"Stimulasi\",\n    \"CreatedAt\": \"2023-06-06T13:27:39.7370317+07:00\",\n    \"UpdatedAt\": \"2023-06-06T13:27:39.7370317+07:00\",\n    \"Status\": \"draft\"\n}"
+				},
+				{
+					"name": "Error Title",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"\",\r\n    \"content\": \"Selamat, Bun sekarang si Kecil sudah sudah genap berusia 1 tahun! Dapat dibayangkan dari masih bayi yang tidak bisa melakukan apa pun, sekarang ia sudah tumbuh dan berkembang dengan cepat. Selain terlihat dari perubahan fisiknya, anak usia 1 tahun mulai menguasai kemampuan motorik baru yang membuatnya lebih mandiri. \",\r\n    \"category\": \"Stimulasi\",\r\n    \"status\": \"draft\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/article/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								""
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 06:28:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Title must be at least 20 characters\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Count Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/count_article/draft",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"count_article",
+						"draft"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
