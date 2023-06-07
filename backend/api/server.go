@@ -7,7 +7,7 @@ import (
 
 	"backend/api/controllers"
 	"github.com/joho/godotenv"
-	"backend/api/seed"
+	//"backend/api/seed"
 )
 
 var server = controllers.Server{}
