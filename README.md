@@ -52,7 +52,7 @@ Membuat database dengan menjalankan query berikut
 CREATE DATABASE article
 ```
 
-Membuat tabel `post` dengan menjalankan query berikut
+Membuat tabel `posts` dengan menjalankan query berikut
 ```sh
 CREATE TABLE `posts` (
   `Id` INT unsigned NOT NULL AUTO_INCREMENT,
@@ -65,7 +65,7 @@ CREATE TABLE `posts` (
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB
 ```
-Atau dapat juga membuat tabel `post` dengan menggunakan migrate
+Atau dapat juga membuat tabel `posts` dengan menggunakan migrate
 ```sh
 migrate -database "mysql://root@tcp(localhost:3306)/article" -path database/migrations up
 ```
