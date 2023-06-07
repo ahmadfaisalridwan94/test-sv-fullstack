@@ -44,8 +44,7 @@ export default {
 									text: "Post moved to trash!",
 									icon: 'success',
 								});
-							
-							console.log('active tab di TableComponent: '+paramActiveTab)
+														
 							this.$emit('update-status', paramActiveTab);
 						})
 						.catch(error => {

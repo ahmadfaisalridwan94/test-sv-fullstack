@@ -88,32 +88,10 @@ export default {
                 })
                 .catch(error => {
                     if (error.response) {
-                        // The request was made, but the server responded with a status code outside the 2xx range
-                        // console.log(error.response.data);
-                        // console.log(error.response.status);
-                        // console.log(error.response.headers);
+                        
                         var errData = error.response.data
+                        this.handleValidation(errData)
 
-                        this.errorsTitle = errData.Title
-                        if ((errData.Title).length > 0) {
-                            this.titleInvalid = true
-                        } else {
-                            this.titleInvalid = false
-                        }
-
-                        this.errorsContent = errData.Content
-                        if ((errData.Content).length > 0) {
-                            this.contentInvalid = true
-                        } else {
-                            this.contentInvalid = false
-                        }
-
-                        this.errorsCategory = errData.Category
-                        if ((errData.Category).length > 0) {
-                            this.categoryInvalid = true
-                        } else {
-                            this.categoryInvalid = false
-                        }
                     } else {
                         // Something happened in setting up the request that triggered an error
                         //console.log('Error', error.message);
@@ -139,27 +117,7 @@ export default {
                     if (error.response) {
 
                         var errData = error.response.data
-
-                        this.errorsTitle = errData.Title
-                        if ((errData.Title).length > 0) {
-                            this.titleInvalid = true
-                        } else {
-                            this.titleInvalid = false
-                        }
-
-                        this.errorsContent = errData.Content
-                        if ((errData.Content).length > 0) {
-                            this.contentInvalid = true
-                        } else {
-                            this.contentInvalid = false
-                        }
-
-                        this.errorsCategory = errData.Category
-                        if ((errData.Category).length > 0) {
-                            this.categoryInvalid = true
-                        } else {
-                            this.categoryInvalid = false
-                        }
+                        this.handleValidation(errData)                        
 
                     } else {
                         // Something happened in setting up the request that triggered an error
@@ -170,27 +128,60 @@ export default {
 
         },
 
+        handleValidation(errData) {
+
+            if (errData.hasOwnProperty("Title")) {
+
+                this.errorsTitle = errData.Title
+                if ((errData.Title).length > 0) {
+                    this.titleInvalid = true
+                } else {
+                    this.titleInvalid = false
+                }
+
+            }
+
+            if (errData.hasOwnProperty("Content")) {
+                this.errorsContent = errData.Content
+                if ((errData.Content).length > 0) {
+                    this.contentInvalid = true
+                } else {
+                    this.contentInvalid = false
+                }
+            }
+
+            if (errData.hasOwnProperty("Category")) {
+                this.errorsCategory = errData.Category
+                if ((errData.Category).length > 0) {
+                    this.categoryInvalid = true
+                } else {
+                    this.categoryInvalid = false
+                }
+            }
+
+        },
+
         handleChangeTitle() {
-            this.titleInvalid = false            
+            this.titleInvalid = false
         },
 
         handleChangeContent() {
-            this.contentInvalid = false            
+            this.contentInvalid = false
         },
 
         handleChangeCategory() {
-            this.categoryInvalid = false           
+            this.categoryInvalid = false
         },
 
-        handleKeyupTitle(){
+        handleKeyupTitle() {
             this.errorsTitle = []
         },
-        
-        handleKeyupContent(){
+
+        handleKeyupContent() {
             this.errorsContent = []
         },
 
-        handleKeyupCategory(){
+        handleKeyupCategory() {
             this.errorsCategory = []
         }
     },

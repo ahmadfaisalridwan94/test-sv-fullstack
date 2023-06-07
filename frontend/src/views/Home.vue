@@ -57,7 +57,7 @@ export default {
 			this.$router.push('/post/create');
 		},
 		fetchPosts(status) {
-			console.log('status = '+status)
+			
 			axios.get(`/count_article/${status}`)
 				.then(response => {
 					var countData = response.data.Data;
