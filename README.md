@@ -2,7 +2,7 @@
 ## _Aplikasi Web Fullstack Manajemen Artikel Menggunakan Go dan Vuejs_
 
 Aplikasi manajemen post artikel berbasis web.
-- Frontend: VueJS
+- Frontend: VueJS, Tailwindcss
 - Backend (RESTful API): Go
 - DBMS MySQL
 - Dilengkapi dengan Postman Collection
