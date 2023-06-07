@@ -13,8 +13,8 @@ type Post struct {
 	Title     string    `gorm:"size:200;not null;unique;column:Title;" json:"Title"`
 	Content   string    `gorm:"type:text;not null;column:Content;" json:"Content"`
 	Category  string    `gorm:"size:100;not null;column:Category;" json:"Category"`	
-	CreatedAt time.Time `gorm:"type:timestamp;default:CURRENT_TIMESTAMP;column:CreatedAt;" json:"CreatedAt"`
-	UpdatedAt time.Time `gorm:"type:timestamp;default:CURRENT_TIMESTAMP;column:UpdatedAt;" json:"UpdatedAt"`
+	CreatedAt time.Time `gorm:"type:timestamp;default:CURRENT_TIMESTAMP;column:CreatedAt;" json:"-"`
+	UpdatedAt time.Time `gorm:"type:timestamp;default:CURRENT_TIMESTAMP;column:UpdatedAt;" json:"-"`
 	Status    string    `gorm:"size:100;not null;column:Status;" json:"Status"`	
 }
 
