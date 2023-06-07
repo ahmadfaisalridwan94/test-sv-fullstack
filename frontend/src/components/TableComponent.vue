@@ -78,37 +78,51 @@ export default {
 
 <template>
 	<div class="relative overflow-x-auto mt-3">
-		<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-			<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-				<tr>
-					<th v-for="hItem in tableHeaderItems" scope="col" class="px-6 py-3">
-						{{ hItem }}
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr v-for="post in posts" :key="post.id" :post="post"
-					class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-					<td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-						{{ post.Title }}
-					</td>
-					<td class="px-6 py-4">{{ post.Category }}</td>
-					<td class="px-6 py-4">
-
-						<div class="flex space-x-1" v-if="post.Status != 'trash'">
-							<button title="Edit" @click="handleEdit(post.Id)"
-								class="bg-grey-light hover:bg-blue text-blue-darkest font-bold py-2 px-1 rounded inline-flex items-center">
-								<PencilSquareIcon class="h-6 w-6 text-blue-500" />
-							</button>
-							<button title="Delete" @click="showAlertConfirm(post.Id, activeTab)"
-								class="bg-grey-light hover:bg-blue text-blue-darkest font-bold py-2 px-1 rounded inline-flex items-center">
-								<TrashIcon class="h-6 w-6 text-red-500" />
-							</button>
-						</div>
-
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="table-responsive">
+			<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+				<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+					<tr>
+						<th v-for="hItem in tableHeaderItems" scope="col" class="px-6 py-3">
+							{{ hItem }}
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="post in posts" :key="post.id" :post="post"
+						class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+						<td scope="row"
+							class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+							{{ post.Title }}
+						</td>
+						<td class="px-6 py-4">{{ post.Category }}</td>
+						<td class="px-6 py-4">
+							<div class="flex space-x-1" v-if="post.Status != 'trash'">
+								<button title="Edit" @click="handleEdit(post.Id)"
+									class="bg-grey-light hover:bg-blue text-blue-darkest font-bold py-2 px-1 rounded inline-flex items-center">
+									<PencilSquareIcon class="h-6 w-6 text-blue-500" />
+								</button>
+								<button title="Delete" @click="showAlertConfirm(post.Id, activeTab)"
+									class="bg-grey-light hover:bg-blue text-blue-darkest font-bold py-2 px-1 rounded inline-flex items-center">
+									<TrashIcon class="h-6 w-6 text-red-500" />
+								</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>
+
+<style>
+.table-responsive {
+	overflow-x: auto;
+}
+
+@media (max-width: 640px) {
+	.table-responsive {
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+}
+</style>
