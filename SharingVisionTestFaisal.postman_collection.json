@@ -79,82 +79,26 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/article/100/0?status=",
+					"raw": "localhost:8080/article/2/0",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"article",
-						"100",
+						"2",
 						"0"
-					],
-					"query": [
-						{
-							"key": "status",
-							"value": ""
-						}
 					]
 				}
 			},
 			"response": [
-				{
-					"name": "Article",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/article/2/0",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"article",
-								"2",
-								"0"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Access-Control-Allow-Headers",
-							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, X-CSRF-Token"
-						},
-						{
-							"key": "Access-Control-Allow-Methods",
-							"value": "POST, GET, OPTIONS, PUT, DELETE"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "http://localhost:5173, http://127.0.0.1:5173"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Date",
-							"value": "Tue, 06 Jun 2023 14:00:53 GMT"
-						},
-						{
-							"key": "Content-Length",
-							"value": "1259"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"Id\": 1,\n        \"Title\": \"Minyak Ikan Kod dan Minyak Ikan Tuna, Mana yang Lebih Baik?\",\n        \"Content\": \"Nutrisi memiliki peran penting dalam mendukung proses tumbuh kembang si Kecil. Di antara berbagai asupan nutrisi yang penting untuk anak, Bunda jangan sampai melewatkan asupan minyak ikan, ya! Karena, manfaat minyak ikan untuk anak sangatlah banyak, terutama bagi proses perkembangan otak yang optimal.\",\n        \"Category\": \"Nutrisi dan Makanan\",\n        \"CreatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"UpdatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"Status\": \"published\"\n    },\n    {\n        \"Id\": 2,\n        \"Title\": \"Ketahui Apa Saja Hak dan Kewajiban Anak di Rumah\",\n        \"Content\": \"Setiap anak berhak mendapatkan pendidikan. Tidak cuma dalam bentuk pendidikan formal dengan cara menyekolahkan anak, tapi juga mendidik anak belajar di rumah. Misalnya, ketika si Kecil merasa kesulitan dengan tugas sekolahnya, Bunda harus membantu mengajari anak sampai ia mengerti. Tidak hanya pelajaran sekolah saja, Bunda juga bisa mengajarkan anak soal pelajaran hidup, seperti tentang moral, tata krama, dan etika berinteraksi dengan orang lain supaya si Kecil nantinya tumbuh menjadi pribadi yang lebih baik.\",\n        \"Category\": \"Nutrisi dan Makanan\",\n        \"CreatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"UpdatedAt\": \"2023-06-06T20:59:46+07:00\",\n        \"Status\": \"published\"\n    }\n]"
-				},
 				{
 					"name": "Articles",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/article/100/0?status=draft",
+							"raw": "localhost:8080/article/100/0",
 							"host": [
 								"localhost"
 							],
@@ -163,12 +107,6 @@
 								"article",
 								"100",
 								"0"
-							],
-							"query": [
-								{
-									"key": "status",
-									"value": "draft"
-								}
 							]
 						}
 					},
@@ -182,7 +120,7 @@
 						},
 						{
 							"key": "Access-Control-Allow-Methods",
-							"value": "*"
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -194,15 +132,15 @@
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 06 Jun 2023 15:50:44 GMT"
+							"value": "Wed, 07 Jun 2023 11:12:47 GMT"
 						},
 						{
-							"key": "Content-Length",
-							"value": "645"
+							"key": "Transfer-Encoding",
+							"value": "chunked"
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"Id\": 3,\n        \"Title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test Delete\",\n        \"Content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\n        \"Category\": \"Nutrisi\",\n        \"CreatedAt\": \"2023-06-06T22:49:16+07:00\",\n        \"UpdatedAt\": \"2023-06-06T22:49:16+07:00\",\n        \"Status\": \"draft\"\n    }\n]"
+					"body": "[\n    {\n        \"Id\": 1,\n        \"Title\": \"Minyak Ikan Kod dan Minyak Ikan Tuna, Mana yang Lebih Baik?\",\n        \"Content\": \"Nutrisi memiliki peran penting dalam mendukung proses tumbuh kembang si Kecil. Di antara berbagai asupan nutrisi yang penting untuk anak, Bunda jangan sampai melewatkan asupan minyak ikan, ya! Karena, manfaat minyak ikan untuk anak sangatlah banyak, terutama bagi proses perkembangan otak yang optimal.\",\n        \"Category\": \"Nutrisi dan Makanan\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 2,\n        \"Title\": \"Ketahui Apa Saja Hak dan Kewajiban Anak di Rumahs\",\n        \"Content\": \"Setiap anak berhak mendapatkan pendidikan. Tidak cuma dalam bentuk pendidikan formal dengan cara menyekolahkan anak, tapi juga mendidik anak belajar di rumah. Misalnya, ketika si Kecil merasa kesulitan dengan tugas sekolahnya, Bunda harus membantu mengajari anak sampai ia mengerti. Tidak hanya pelajaran sekolah saja, Bunda juga bisa mengajarkan anak soal pelajaran hidup, seperti tentang moral, tata krama, dan etika berinteraksi dengan orang lain supaya si Kecil nantinya tumbuh menjadi pribadi yang lebih baik.\",\n        \"Category\": \"Nutrisi dan Makanan\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 3,\n        \"Title\": \"Cara Sederhana Meringankan Batuk Pilek pada Anak\",\n        \"Content\": \"Batuk pilek umumnya disebabkan oleh virus atau bakteri yang menginfeksi hidung dan tenggorokan. Batuk pilek karena infeksi virus dapat sembuh sendiri dalam waktu beberapa hari, sehingga tidak perlu diobati dengan antibiotik. Yang perlu diobati dengan antibiotik adalah batuk pilek karena infeksi bakteri. Meski umumnya tidak berbahaya, batuk pilek dapat mengganggu aktivitas dan istirahat anak. Si Kecil yang biasanya ceria juga bisa jadi terlihat lesu dan tidak bersemangat. Bila seperti ini, Anda sebagai orang tua pasti merasa sedih dan ingin Si Kecil bisa segera kembali sehat. Jika Si Kecil menderita batuk pilek, Anda disarankan untuk berkonsultasi ke dokter terlebih dahulu, terutama apabila Si Kecil belum berusia 2 tahun.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 4,\n        \"Title\": \"Rekomendasi Balsem Bayi yang Aman dan Nyaman untuk Kulit Bayi\",\n        \"Content\": \"Balsem bayi dapat digunakan untuk membantu melegakan pernapasan saat Si Buah Hati batuk atau pilek. Balsem bayi juga bisa memberikan rasa hangat pada badan bayi dan membantu meredakan perut kembung. Perut kembung, batuk, dan pilek merupakan kondisi yang sering dialami oleh bayi. Saat mengalami keluhan tersebut, ia akan rewel akibat sulit bernapas, sakit kepala, hidung tersumbat, perut terasa penuh, atau karena badannya terasa tidak nyaman.\",\n        \"Category\": \"Kesehatan\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 5,\n        \"Title\": \"Beragam Obat Diare Bayi yang Aman\",\n        \"Content\": \"Obat diare bayi dapat diberikan untuk mencegah terjadinya komplikasi, seperti dehidrasi. Ada beragam obat diare yang aman diberikan untuk bayi, mulai dari memberikan ASI lebih sering hingga probiotik. Bayi dikatakan mengalami diare jika ada perubahan pada tekstur, frekuensi, dan warna tinjanya. Diare pada bayi bisa disebabkan oleh banyak hal, seperti infeksi, perubahan tekstur makanan dari cair ke padat, atau kondisi medis tertentu.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 6,\n        \"Title\": \"6 Warna Feses Bayi Diare\",\n        \"Content\": \"Memperhatikan warna feses bayi diare dapat menjadi cara untuk mengetahui kondisi bayi. Berdasarkan warna feses bayi, penyebab diare pada bayi dapat dibedakan. Selain itu, mengetahui warna feses bayi diare pun dapat menjadi petunjuk kapan harus membawanya ke dokter untuk mendapatkan penanganan.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 7,\n        \"Title\": \"Inilah 9 Perlengkapan Bayi yang Tidak Perlu Dibeli\",\n        \"Content\": \"Perlengkapan bayi yang lucu sering kali membuat Bumil lapar mata. Namun, ada beragam perlengkapan bayi yang tidak perlu dibeli, lho. Selain bisa membuat Bumil lebih berhemat, tetapi juga menghindari kebiasaan menumpuk barang.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"draft\"\n    },\n    {\n        \"Id\": 8,\n        \"Title\": \"Agar Aman dan Nyaman, Ini Tips Membawa Bayi Saat Perjalanan Mudik\",\n        \"Content\": \"Membawa bayi dalam perjalanan mudik Lebaran bisa saja terasa merepotkan, apalagi jika ini adalah mudik pertama Bunda dengan Si Kecil. Namun, tidak perlu terlalu khawatir ya, Bun. Jika dipersiapkan dengan baik, perjalanan mudik dengan Si Kecil tetap bisa terasa nyaman dan menyenangkan, kok.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 9,\n        \"Title\": \"Bayi Jarang Menangis, Apakah Hal Ini Normal?\",\n        \"Content\": \"Menangis adalah cara bayi untuk berkomunikasi dengan Anda. Alasan bayi menangis biasanya untuk memberi tahu bahwa dia lapar, mengantuk, kedinginan atau kepanasan, popoknya basah, tidak nyaman, takut, atau bosan dan sekadar ingin digendong.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 10,\n        \"Title\": \"3 Kriteria Tempat Tidur Bayi yang Ideal\",\n        \"Content\": \"Memilih tempat tidur bayi bukan perkara yang mudah karena ada beberapa kriteria yang perlu dipenuhi. Ini penting untuk diperhatikan, sebab pemilihan tempat tidur yang tepat tidak hanya membuat Si Kecil tertidur nyaman, tapi juga terhindar dari bahaya.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"draft\"\n    },\n    {\n        \"Id\": 11,\n        \"Title\": \"Amankah Posisi Bayi Tidur Miring?\",\n        \"Content\": \"Pada orang dewasa, posisi tidur miring memang dapat menyebabkan ngiler saat tidur, tetapi posisi ini bermanfaat untuk mencegah mendengkur, mengurangi mulas, menjaga kesehatan saluran cerna, dan menghindari nyeri punggung bawah. Namun, tidur miring bukanlah posisi tidur yang disarankan untuk bayi. Pasalnya, bayi yang tidur miring sering kali berakhir dengan posisi tidur tengkurap. Posisi tidur miring dan tengkurap bisa saja membuat saluran pernapasan bayi menyempit atau terhalang. Akibatnya, bayi menjadi kesulitan bernapas dan kekurangan oksigen. Kondisi ini juga akan meningkatkan risiko sindrom kematian bayi mendadak (SIDS).\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 12,\n        \"Title\": \"Daftar Makanan Bergizi untuk Ibu Hamil dan Manfaatnya\",\n        \"Content\": \"Makanan bergizi untuk ibu hamil sangat berpengaruh terhadap kesehatan ibu dan pertumbuhaan janin. Oleh karena itu, penting bagi ibu hamil untuk mengetahui pilihan makanan bergizi yang bisa dikonsumsi agar janin yang dikandung tetap sehat. Konsumsi makanan bergizi untuk ibu hamil dilakukan agar kebutuhan nutrisi saat hamil tercukupi dengan baik. Meski demikian, ibu hamil perlu untuk memerhatikan apa yang dikonsumsinya. Pasalnya, ada makanan bergizi yang tidak diperbolehkan untuk dikonsumsi selama kehamilan, seperti telur dan daging mentah, serta produk olahan susu yang belum melewati proses pasteurisasi.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 13,\n        \"Title\": \"Kapan Si Kecil Boleh Mengonsumsi Yoghurt?\",\n        \"Content\": \"Yoghurt dikenal baik untuk kesehatan, terutama dalam memelihara kesehatan saluran pencernaan. Namun, apakah yoghurt untuk bayi boleh diberikan sebagai MPASI? Mulai usia berapakah yoghurt sebaiknya diberikan kepada bayi? Simak jawabannya dalam artikel berikut. Yoghurt merupakan produk olahan susu hasil fermentasi. Selain mengandung nutrisi yang sama dengan susu, yoghurt juga mengandung probiotik. Probiotik bermanfaat dalam meningkatkan sistem kekebalan tubuh dan kesehatan saluran cerna.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 14,\n        \"Title\": \"Bayi Ngorok, Kenali Penyebab dan Cara Mencegahnya\",\n        \"Content\": \"Bayi ngorok di minggu awal kelahirannya adalah kondisi yang normal terjadi. Namun, Bunda harus tetap waspada, karena ini bisa menjadi tanda Si Kecil mengalami gangguan kesehatan bila terjadi secara terus-menerus atau suara ngorok terdengar sangat keras. Bayi baru lahir yang sedang tidur biasanya bernapas sambil mengeluarkan suara atau dengkuran. Hal ini karena saluran pernapasannya masih sempit dan berisi banyak lendir. Suara ngorok pada bayi biasanya hilang ketika saluran pernapasannya telah berkembang sempurna dan ia sudah mampu menelan ludah.\",\n        \"Category\": \"Keluarga\",\n        \"Status\": \"publish\"\n    },\n    {\n        \"Id\": 15,\n        \"Title\": \"Kenali Penyebab Bayi Kuning dan Cara Mengatasinya\",\n        \"Content\": \"Bayi kuning atau penyakit kuning merupakan kondisi yang umum dialami bayi baru lahir. Meski umumnya tidak berbahaya, ada beberapa hal yang perlu diperhatikan bila bayi menunjukkan tanda-tanda penyakit kuning. Dengan begitu, dapat segera dilakukan penanganan yang tepat. Kondisi bayi kuning ditandai dengan warna kuning pada kulit atau bagian putih mata bayi. Selain itu, bayi yang mengalami penyakit kuning biasanya memiliki urine yang berwarna kuning pekat, tinja berwarna pucat, serta telapak tangan dan kakinya pun menguning.\",\n        \"Category\": \"Nutrisi dan Makanan\",\n        \"Status\": \"draft\"\n    },\n    {\n        \"Id\": 16,\n        \"Title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test Edit\",\n        \"Content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\n        \"Category\": \"Nutrisi\",\n        \"Status\": \"trash\"\n    }\n]"
 				}
 			]
 		},
@@ -230,14 +168,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/article/1",
+							"raw": "localhost:8080/article/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"article",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -247,7 +185,7 @@
 					"header": [
 						{
 							"key": "Access-Control-Allow-Headers",
-							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization, X-CSRF-Token"
+							"value": "*"
 						},
 						{
 							"key": "Access-Control-Allow-Methods",
@@ -255,7 +193,7 @@
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
-							"value": "http://localhost:5173, http://127.0.0.1:5173"
+							"value": "*"
 						},
 						{
 							"key": "Content-Type",
@@ -263,15 +201,15 @@
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 06 Jun 2023 14:00:45 GMT"
+							"value": "Wed, 07 Jun 2023 11:15:38 GMT"
 						},
 						{
 							"key": "Content-Length",
-							"value": "528"
+							"value": "648"
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"Id\": 1,\n    \"Title\": \"Minyak Ikan Kod dan Minyak Ikan Tuna, Mana yang Lebih Baik?\",\n    \"Content\": \"Nutrisi memiliki peran penting dalam mendukung proses tumbuh kembang si Kecil. Di antara berbagai asupan nutrisi yang penting untuk anak, Bunda jangan sampai melewatkan asupan minyak ikan, ya! Karena, manfaat minyak ikan untuk anak sangatlah banyak, terutama bagi proses perkembangan otak yang optimal.\",\n    \"Category\": \"Nutrisi dan Makanan\",\n    \"CreatedAt\": \"2023-06-06T20:59:46+07:00\",\n    \"UpdatedAt\": \"2023-06-06T20:59:46+07:00\",\n    \"Status\": \"published\"\n}"
+					"body": "{\n    \"Id\": 2,\n    \"Title\": \"Ketahui Apa Saja Hak dan Kewajiban Anak di Rumahs\",\n    \"Content\": \"Setiap anak berhak mendapatkan pendidikan. Tidak cuma dalam bentuk pendidikan formal dengan cara menyekolahkan anak, tapi juga mendidik anak belajar di rumah. Misalnya, ketika si Kecil merasa kesulitan dengan tugas sekolahnya, Bunda harus membantu mengajari anak sampai ia mengerti. Tidak hanya pelajaran sekolah saja, Bunda juga bisa mengajarkan anak soal pelajaran hidup, seperti tentang moral, tata krama, dan etika berinteraksi dengan orang lain supaya si Kecil nantinya tumbuh menjadi pribadi yang lebih baik.\",\n    \"Category\": \"Nutrisi dan Makanan\",\n    \"Status\": \"publish\"\n}"
 				}
 			]
 		},
@@ -414,7 +352,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan\",\r\n    \"content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\r\n    \"category\": \"Nutrisi\",\r\n    \"status\": \"draft\"\r\n}",
+					"raw": "{\r\n    \"title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test\",\r\n    \"content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\r\n    \"category\": \"Nutrisi\",\r\n    \"status\": \"draft\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -529,6 +467,68 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"error\": \"Title must be at least 20 characters\"\n}"
+				},
+				{
+					"name": "Create Article",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test\",\r\n    \"content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\r\n    \"category\": \"Nutrisi\",\r\n    \"status\": \"draft\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/article/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Lacation",
+							"value": "localhost:8080/article//17"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Jun 2023 11:16:12 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "557"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 17,\n    \"Title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test\",\n    \"Content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\n    \"Category\": \"Nutrisi\",\n    \"Status\": \"draft\"\n}"
 				}
 			]
 		},
@@ -654,6 +654,64 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"error\": \"Title must be at least 20 characters\"\n}"
+				},
+				{
+					"name": "Update Article",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test Edit\",\r\n    \"content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\r\n    \"category\": \"Nutrisi\",\r\n    \"status\": \"draft\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/article/16",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"article",
+								"16"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Jun 2023 11:16:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "562"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 16,\n    \"Title\": \"Kebutuhan Gizi Bayi Usia 10-12 Bulan Test Edit\",\n    \"Content\": \"Sebagai orangtua, Mama tentu menginginkan si Kecil tumbuh dan berkembang secara optimal. Pastinya ada rasa khawatir jika apa yang dikonsumsi bayi tidak bisa memenuhi kebutuhan gizinya. Pada dasarnya, pemberian makanan untuk si Kecil harus memiliki campuran yang tepat dari beragam nutrisi. Namun, Mama perlu mengukur kebutuhan gizi bayi, sebab nutrisi yang tidak tepat juga dapat menyebabkan kelebihan berat badan hingga obesitas pada si Kecil.\",\n    \"Category\": \"Nutrisi\",\n    \"Status\": \"draft\"\n}"
 				}
 			]
 		},
@@ -663,14 +721,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/count_article/draft",
+					"raw": "localhost:8080/count_article/publish",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"count_article",
-						"draft"
+						"publish"
 					]
 				}
 			},
