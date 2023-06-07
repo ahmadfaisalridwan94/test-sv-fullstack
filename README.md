@@ -34,6 +34,7 @@ go get
 
 ###### Konfigurasi database
 #
+Buka file .env pada directory backend
 ```sh
 .env
 ```
