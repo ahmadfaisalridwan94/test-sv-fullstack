@@ -12,6 +12,7 @@ export default {
 
 <template>
     <div class="max-w-6xl mx-auto py-8">
+        <h2 class="text-3xl mb-4 text-center font-bold dark:text-white">Edit Post</h2>
         <ArticleFormEdit />
     </div>
 </template>
