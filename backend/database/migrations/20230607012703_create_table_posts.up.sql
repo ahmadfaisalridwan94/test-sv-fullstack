@@ -6,6 +6,5 @@ CREATE TABLE `posts` (
   `CreatedAt` TIMESTAMP NOT NULL DEFAULT current_timestamp(),
   `UpdatedAt` TIMESTAMP NOT NULL DEFAULT current_timestamp(),
   `Status` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`Id`),
-  UNIQUE KEY `Title` (`Title`)
+  PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB
