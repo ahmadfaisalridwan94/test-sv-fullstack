@@ -11,6 +11,7 @@ Aplikasi manajemen post artikel berbasis web.
 
 - Membuat artikel baru. Form artikel terdiri dari Title, Content, dan Category
 - Mengupdate artikel
+- Menghapus artikel (memindahkan artikel ke tab Trashed)
 - Artikel terdiri dari status "Published", "Draft", dan "Trashed"
 - Setiap tabel artikel pada tab, menggunakan pagination
 - Melihat preview blog (dengan pagination)
